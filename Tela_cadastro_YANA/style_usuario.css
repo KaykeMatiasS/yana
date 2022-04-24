@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans:wght@300&display=swap');
+
+body{background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);display: flex; justify-content: center;align-items: center;height: 100vh;}
+
+
+/* =====  formulário ========= */
+
+header{color: rgb(0, 0, 0);text-align: center;font-weight: 900;font-size: 17pt;}
+
+article{font-weight: 900;}
+
+#bloco  {
+
+    background-color: white;
+    width: 380px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    
+    
+}
+
+#botao{
+    background-color: transparent;
+    border: 2px solid #0e0c0c;
+    border-radius: 0.6em;
+    color: #464342;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    margin-left: 90px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;}
+
+#botao:hover{
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+.lista{width: 80%;padding: 5px;margin: 5px;}
+
+.lista:focus{ border-radius: 4px;}
+
+article{padding-top: 10px;}
+
+button{margin-top: 50px;margin-left: 200px;}
+
+
+/* ================================= */
