@@ -11,9 +11,9 @@
             }
         }
 
-        public static function cadastrar($apelido, $cpf, $pronomes, $email, $senha, $banimento, $motivobanimento){
-            $sql = Mysql::conectar()->prepare("INSERT INTO `usuario`(Apelido_Usuario, CPF_Usuario, Pronomes, Email_Usuario, Senha_Usuario, Cod_Banimento, Motivo_Banimento) VALUES(?,?,?,?,?, null, null)");
-            $sql->execute(array($apelido, $cpf, $pronomes, $email, $senha, $banimento, $motivobanimento));
+        public static function cadastrar($apelido, $cpf, $pronomes, $email, $senha){
+            $sql = Mysql::conectar()->prepare("INSERT INTO `usuario`(Apelido_Usuario, CPF_Usuario, Pronomes, Email_Usuario, Senha_Usuario) VALUES(?,?,?,?,?)");
+            $sql->execute(array($apelido, $cpf, $pronomes, $email, $senha));
         }
     }
 ?>
