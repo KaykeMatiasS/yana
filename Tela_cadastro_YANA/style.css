@@ -12,9 +12,10 @@ article{font-weight: 900;}
 
 #bloco {
     display: flex;
+    flex-direction: column;
     background-color: white;
     width: 500px;
-    height: 1050px;
+    height: 1070px;
     border-radius: 10px;
     padding: 5px;
     
