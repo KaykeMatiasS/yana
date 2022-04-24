@@ -1,8 +1,7 @@
 
-
   // Mascara CPF  //
 
-  const cpf = document.querySelector("#cpf")
+  const cpf = document.querySelector("#CPF_Esp")
 
   cpf.addEventListener("keyup", event => {
       let start = cpf.selectionStart 
@@ -59,8 +58,9 @@ function id( el ){
 	return document.getElementById( el );
 }
 window.onload = function(){
-	id('telefone').onkeyup = function(){
+	id('Contato_Esp').onkeyup = function(){
 		mascara( this, mtel );
 	}
 }
 
+  
