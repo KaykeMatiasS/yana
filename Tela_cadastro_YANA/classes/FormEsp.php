@@ -1,14 +1,12 @@
 <?php
-    class form{
+    class FormEsp{
         public static function alert($tipo, $mensagem){
             if($tipo == 'erro'){
-                // echo '<div style="color:red; font-size25px; >'.$mensagem.'</div>';
-                echo $mensagem;
+                echo '<div style="color:red; font-size25px; background:black">'.$mensagem.'</div>';
                 return false;
             }
             else if($tipo == 'sucesso'){
-                // echo '<div style="color:green; font-size25px; >'.$mensagem.'</div>';
-                echo $mensagem;
+                echo '<div style="color:green; font-size25px; background:black">'.$mensagem.'</div>';
                 return true;
             }
         }
