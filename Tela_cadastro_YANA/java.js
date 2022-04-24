@@ -1,17 +1,17 @@
 
 
-// MASCARA CNPJ //
+/* MASCARA CNPJ
 document.getElementById('cnpj').addEventListener('input', function (e) {
     var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
     e.target.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
-  });
+  });*/
 
 
 
 
   // Mascara CPF  //
 
-  const cpf = document.querySelector("#cpf")
+  const cpf = document.querySelector("#CPF_Esp")
 
   cpf.addEventListener("keyup", event => {
       let start = cpf.selectionStart 
@@ -68,7 +68,7 @@ function id( el ){
 	return document.getElementById( el );
 }
 window.onload = function(){
-	id('telefone').onkeyup = function(){
+	id('Contato_Esp').onkeyup = function(){
 		mascara( this, mtel );
 	}
 }

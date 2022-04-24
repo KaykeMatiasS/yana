@@ -62,14 +62,18 @@
         <header>Cadastro Especialista</header>
         <form method="post" action="">
 
-            <article>Nome:</article>
-            <input required placeholder="Nome" type="text" class="lista" name="Nome_Esp" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+        <article>Nome:</article>
+            <input required placeholder="Nome"  type="text" class="lista" name="Nome_Esp" id="Nome_Esp" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$">
 
-            <article>Nome Social:</article>
-            <input placeholder="Nome Social" type="text" class="lista" name="Nome_Social_Esp" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+
+            <article>Nome Social</article>
+            <input type="text" class="lista" name="Nome_Social_Esp" id="Nome_Social_Esp" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$" >
+            
 
             <article>CPF:</article>
-            <input required placeholder="999.999.999-99" type="text" class="lista" name="CPF_Esp" >
+            <input required placeholder="999.999.999-99"  type="text" class="lista" name="CPF_Esp" id="CPF_Esp" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
             
             <article>Gênero:</article>
             <div>
@@ -103,7 +107,7 @@
 
 
             <article>Contato:</article>
-            <input required placeholder="Telefone" ype="number" class="lista" name="Contato_Esp"  pattern="[0-9]+$">
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp"  pattern="\(\d{2}\)\d{5}\-\d{4}"  maxlength="15">
             
 
             <article>Biografia:</article>
@@ -119,6 +123,7 @@
     
     </div>
 
+    <script src="java.js"></script>
     
 </body>
 </html>
