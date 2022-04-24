@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Fotos/logo.png" type="image/x-icon">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="bloco">
+        <header>Cadastro Especialista</header>
+
+        
+
+        <form method="post" action="">
+
+            <article>Nome:</article>
+            <input required placeholder="Nome"  type="text" class="lista" name="" id="" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$">
+
+
+            <article>Nome Social</article>
+            <input type="text" class="lista" name="" id="" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$" >
+            
+
+            <article>CPF:</article>
+            <input required placeholder="999.999.999-99"  type="text" class="lista" name="" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
+           
+
+
+            <article>CNPJ Clinica:</article>
+            <input  placeholder="CPNJ" type="text" class="lista" name="" id="cnpj"  pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}">
+
+            
+
+            
+            <article>Gênero:</article>
+            <div>
+                <input checked type="radio" name="sexo" id="masculino" value="Masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="feminino" value="Feminino">
+                <label for="feminino">Feminino</label> 
+            </div>
+           
+
+            
+            <article>Idade:</article>
+            <input required placeholder="Idade" type="number" class="lista" name="" id="" maxlength="2" min="10" max="99"  >
+
+            <article>Instituição:</article>
+            <input required placeholder="Instituição" type="text"  class="lista"  name="" id="" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$">
+
+
+            <article>Formação Academica:</article>
+            <input  required placeholder="Formação Academica " type="text"  class="lista"  name="" id="" pattern="^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$">
+
+            
+            <article>Email:</article>
+            <input required placeholder="E-mail" type="email" class="lista" name="" id="">
+
+
+            <article>Senha:</article>
+            <input required placeholder="Senha" type="password" name="" id="" class="lista" minlength="6" >
+
+
+            <article>Contato:</article>
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="" id="telefone"  pattern="[0-9]+$" onkeyup="telefone_validation()" maxlength="15">
+            
+
+            <article>Biografia:</article>
+            <input required type="text" class="lista" name="" id="bio" >
+
+            
+            
+
+            <input id="botao" onclick="" type="submit" value="Confirmar">
+            
+        
+        </form>
+
+        
+        
+    
+    </div>
+
+
+   <script src="java.js"></script>
+    
+</body>
+</html>
