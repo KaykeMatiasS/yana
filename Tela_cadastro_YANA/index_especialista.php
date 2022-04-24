@@ -72,7 +72,7 @@
                 pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
 
             <article>CPF:</article>
-            <input required placeholder="999.999.999-99"  type="text" class="lista" name="CPF_Esp" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+            <input required placeholder="999.999.999-99"  type="text" class="lista" name="CPF_Esp" id="CPF_Esp" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
 			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
 
 
