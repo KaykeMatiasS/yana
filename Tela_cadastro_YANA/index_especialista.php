@@ -111,7 +111,7 @@
 
 
             <article>Contato:</article>
-            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp"  pattern="(\d{2})\d{5}-\d{4}"  maxlength="15">
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp"  pattern="(\d{2})\d{5}-\d{4}"  maxlength="11">
 
 
             <article>Biografia:</article>
