@@ -19,33 +19,37 @@
 
         <form method="POST" action="">
 
-            <article>Nome:</article>
-            <input required placeholder="Nome" type="text" class="lista" name="" id=""  pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+            <article>Apelido:</article>
+            <input required placeholder="Usuario" type="text" class="lista" name="" id=""  pattern="^[a-zA-Z\s]+$">
 
 
             <article>CPF:</article>
-            <input  placeholder="999.999.999-99" type="text" class="lista" name="" id="CPF" >
+            <input required placeholder="999.999.999-99" type="text" class="lista" name="" id="cpf" >
 
 
-            <article>Sexo:</article>
+            <article>Pronome:</article>
             <div>
-                <input checked type="radio" name="sexo" id="masculino" value="Masculino">
-                <label for="masculino">Masculino</label>
+                <input  type="radio" name="sexo" id="masculino" value="Masculino">
+                <label for="Masculino">Ele/Dele</label>
+
+                <input type="radio" name="sexo" id="Feminino" value="Feminino">
+                <label for="Feminino">Ela/Dela</label>
+
+
+                <input type="radio" name="sexo" id="Neutro" value="Neutro">
+                <label for="Neutro">Elu/Delu</label>
             </div>
            
-            <div>
-               <input type="radio" name="sexo" id="feminino" value="Feminino">
-               <label for="feminino">Feminino</label> 
-            </div>
+            
+               
            
-
 
             <article>Idade:</article>
             <input required placeholder="Idade" type="number" class="lista" name="" maxlength="2" min="10" max="99" id="" pattern="[1-9]+$">
 
             
             <article>Email:</article>
-            <input required placeholder="Email" type="E-mail" class="lista" name="" id="">
+            <input required placeholder="You@example.com" type="E-mail" class="lista" name="" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 
 
             <article>Senha</article>
@@ -63,6 +67,7 @@
     
     </div>
 
+    <script src="java.js"></script>
     
 </body>
 </html>
