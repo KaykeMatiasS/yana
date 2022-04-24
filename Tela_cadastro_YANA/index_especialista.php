@@ -15,9 +15,6 @@
     <link rel="shortcut icon" href="Fotos/logo.png" type="image/x-icon">
     <title>Cadastro</title>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <body>
     <div class="FormEsp_cd" id="bloco">
@@ -75,7 +72,9 @@
                 pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
 
             <article>CPF:</article>
-            <input required placeholder="999.999.999-99" type="text" class="lista" name="CPF_Esp">
+            <input required placeholder="999.999.999-99"  type="text" class="lista" name="CPF_Esp" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
 
             <article>Gênero:</article>
             <div>
@@ -112,7 +111,7 @@
 
 
             <article>Contato:</article>
-            <input required placeholder="Telefone" ype="number" class="lista" name="Contato_Esp" pattern="[0-9]+$">
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp"  pattern="(\d{2})\d{5}-\d{4}"  maxlength="15">
 
 
             <article>Biografia:</article>
@@ -123,5 +122,6 @@
 
         </form>
     </div>
+    <script src="java.js"></script>
 </body>
 </html>

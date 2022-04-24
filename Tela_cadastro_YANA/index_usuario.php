@@ -1,3 +1,9 @@
+<?php
+    include('config.php');
+
+    Mysql::conectar();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,7 +38,7 @@
                 }else if($senha == ''){
                     FormUsu::alert('erro', 'Preencha o campo senha.');
                 }else{
-                    FormUsu::cadastrar($apelido, $cpf, $pronomes, $email, $senha, $banimento, $motivobanimento);
+                    FormUsu::cadastrar($apelido, $cpf, $pronomes, $email, $senha);
                     FormUsu::alert('sucesso','Cadastro realizado com sucesso.');
                 }
             }
@@ -50,20 +56,15 @@
 
             <article>Pronome:</article>
             <div>
-                <input type="radio" name="Pronomes" id="masculino" value="Masculino">
-                <label for="Masculino">Ele/Dele</label>
+                <input type="radio" name="Pronomes" id="masculino" value="Ele/Dele">
+                <label for="Ele/Dele">Ele/Dele</label>
 
-                <input type="radio" name="Pronomes" id="Feminino" value="Feminino">
-                <label for="Feminino">Ela/Dela</label>
+                <input type="radio" name="Pronomes" id="Feminino" value="Ela/Dela">
+                <label for="Ela/Dela">Ela/Dela</label>
 
-
-                <input type="radio" name="Pronomes" id="Neutro" value="Neutro">
-                <label for="Neutro">Elu/Delu</label>
+                <input type="radio" name="Pronomes" id="Neutro" value="Elu/Delu">
+                <label for="Elu/Delu">Elu/Delu</label>
             </div>
-
-            <!-- <article>Idade:</article>
-            <input required placeholder="Idade" type="number" class="lista" name="" maxlength="2" min="10" max="99"
-                id="" pattern="[1-9]+$"> -->
 
             <article>Email:</article>
             <input required placeholder="You@example.com" type="E-mail" class="lista" name="Email_Usuario" id=""
