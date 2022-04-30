@@ -84,7 +84,7 @@
                 <input type="radio" name="Genero_Esp" id="feminino" value="Feminino">
                 <label for="feminino">Feminino</label>
 
-                <input type="radio" name="Genero_Esp" id="feminino" value="Outros">
+                <input type="radio" name="Genero_Esp" id="outros" value="Outros">
                 <label for="outros">Outros</label>
             </div>
 
