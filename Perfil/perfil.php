@@ -28,10 +28,37 @@
 <body>
     <div class="container">
         <div class="card">
-            <div class="overlay d-none"> <small class="fa fa-close"></small> <img src="https://imgur.com/SSCE2Uj.jpg"> </div>
+            <div 
+                class="overlay d-none"> 
+                <small class="fa fa-close"></small> 
+                <img src="
+                <?php 
+                    if($especialista['Genero_Esp'] == "Masculino"){
+                        echo("XXXXXX1.png");
+                    }else if($especialista['Genero_Esp'] == "Feminino"){
+                        echo("XXXXXX2.png");
+                    }else{
+                        echo("XXXXXXX.png");
+                    }
+                ?>"> 
+            </div>
             <div class="upperborder"> </div>
             <it class="fa fa-plus"></it>
-            <div class="image"> <span><img id="userimage" src="https://imgur.com/SSCE2Uj.jpg"></span> </div>
+            <div class="image"> 
+                <span>
+                    <img id="userimage" 
+                    src="
+                        <?php 
+                        if($especialista['Genero_Esp'] == "Masculino"){
+                            echo("XXXXXX1.png");
+                        }else if($especialista['Genero_Esp'] == "Feminino"){
+                            echo("XXXXXXX.png");
+                        }else{
+                            echo("XXXXXXX.png");
+                        }
+                        ?>">
+                </span> 
+            </div>
             <div class="text">
                 <h3>
                     <?php 
