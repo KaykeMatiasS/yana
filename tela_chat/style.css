@@ -1,0 +1,28 @@
+body{background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+
+
+#bloco{
+    padding: 5px;
+    
+    display: grid;
+    grid-template-columns: auto 2fr;
+}
+
+
+#chat{background-color: aliceblue;
+width: 98%;margin-left: 10px;border-radius: 5px}
+
+
+form{
+    padding: 10px;
+}
+
+#lista_pessoas{
+    background-color: aliceblue;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px
+    
+}
+
+
