@@ -4,7 +4,8 @@
 
 NOTE: Essa Playlist de vídeos foram usadas como base paara o processo de desenvolvimento do projeto https://www.youtube.com/watch?v=hEPAr4MPQjU&list=PLyo0RUAM69UvnqUq5SFeVahS_YTUVgq4v[aqui].
 
-image:chat-websockets.gif[]
+
+DESCRIÇÃO:
 
 Web chat utilizando http://nodejs.org:[Node.js]. Com Node.js podemos usar JavaScript no lado servidor. A aplicação utiliza http://websocket.org[WebSockets (recurso do HTML5)] com a biblioteca http://socket.io para implementar o chat.
 
@@ -64,10 +65,9 @@ Para iniciar o servidor, podemos executar:
 
 [source, bash]
 ----
-npm start
+nodemon server.js
 ----
 
-Porém, utilizando o nodemon, basta fazer `nodemon` que ele vai procurar um arquivo `server.js` e iniciá-lo automaticamente.
 
 === Cliente
 
