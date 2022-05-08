@@ -31,14 +31,13 @@
             <div 
                 class="overlay d-none"> 
                 <small class="fa fa-close"></small> 
-                <img src="
                 <?php 
                     if($especialista['Genero_Esp'] == "Masculino"){
-                        echo("XXXXXX1.png");
+                        ?><img src="images/imgMasculino.png"><?php
                     }else if($especialista['Genero_Esp'] == "Feminino"){
-                        echo("XXXXXX2.png");
+                        ?><img src="images/imgFeminino.png"><?php
                     }else{
-                        echo("XXXXXXX.png");
+                        ?><img src="images/imgOutros.png"><?php
                     }
                 ?>"> 
             </div>
