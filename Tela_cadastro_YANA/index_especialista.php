@@ -98,7 +98,7 @@
 
 
             <article>Formação Academica:</article>
-            <input required placeholder="Formação Academica " type="text" class="lista" name="Formacao_Academica"
+            <input required placeholder="Formação Academica " type="text" name="Formacao_Academica"
                 pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
 
 
@@ -110,9 +110,11 @@
             <input required placeholder="Senha" type="password" name="Senha_Esp" minlength="6">
 
 
-            <article>Contato:</article>
-            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp"  pattern="(\d{2})\d{5}-\d{4}"  maxlength="11">
+            <!-- <article>Contato:</article>
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp" pattern="(\d{2})\d{5}-\d{4}"  maxlength="11"> -->
 
+            <article>Contato</article>
+            <input required placeholder="(11) 99999-9999" type="text" class="lista" id="Contato_Esp" name="Contato_Esp" maxlength="11" />
 
             <article>Biografia:</article>
             <input type="text" name="Biografia_Esp" id="bio">

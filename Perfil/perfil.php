@@ -49,11 +49,11 @@
                     src="
                         <?php 
                         if($especialista['Genero_Esp'] == "Masculino"){
-                            echo("XXXXXX1.png");
+                            echo("images/imgMasculino.png");
                         }else if($especialista['Genero_Esp'] == "Feminino"){
-                            echo("XXXXXXX.png");
+                            echo("images/imgFeminino.png");
                         }else{
-                            echo("XXXXXXX.png");
+                            echo("images/imgOutros.png");
                         }
                         ?>">
                 </span> 
@@ -69,14 +69,9 @@
                     ?>
                 </h3>
                 <p><?php echo $especialista["Biografia_Esp"]?></p>
+                <p><?php echo $especialista["Email_Esp"]?></p>
             </div>
-            <div class="bottom">
-                <div class="social"> 
-                    <i class="fa fa-facebook-f"></i> 
-                    <i class="fa fa-envelope-o"></i></a>
-                    <i class="fa fa-linkedin"></i> 
-                    <i class="fa fa-dribbble"></i> </div>
-            </div>
+            
         </div>
     </div>
     <script src="perfil.js"></script>
