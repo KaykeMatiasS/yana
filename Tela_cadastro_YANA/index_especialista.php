@@ -64,12 +64,11 @@
         <form method="post" action="">
 
             <article>Nome:</article>
-            <input required placeholder="Nome" type="text" class="lista" name="Nome_Esp"
-                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+            <input required placeholder="Nome" type="text" class="lista" name="Nome_Esp" pattern="^(([a-zA-Z ]|[é])*)$">
 
             <article>Nome Social:</article>
             <input placeholder="Nome Social" type="text" class="lista" name="Nome_Social_Esp"
-                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+                pattern="^(([a-zA-Z ]|[é])*)$">
 
             <article>CPF:</article>
             <input required placeholder="999.999.999-99"  type="text" class="lista" name="CPF_Esp" id="CPF_Esp" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
@@ -94,30 +93,28 @@
 
             <article>Instituição:</article>
             <input required placeholder="Instituição" type="text" class="lista" name="Instituicao"
-                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+                pattern="^(([a-zA-Z ]|[é])*)$">
 
 
             <article>Formação Academica:</article>
-            <input required placeholder="Formação Academica " type="text" name="Formacao_Academica"
-                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$">
+            <input required placeholder="Formação Academica" class="lista" type="text" name="Formacao_Academica"
+                pattern="^(([a-zA-Z ]|[é])*)$">
 
 
             <article>Email:</article>
-            <input required placeholder="E-mail" type="email" class="lista" name="Email_Esp">
+            <input required placeholder="you@example.com" type="email" class="lista" name="Email_Esp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 
 
             <article>Senha:</article>
-            <input required placeholder="Senha" type="password" name="Senha_Esp" minlength="6">
+            <input required placeholder="Senha" class="lista" type="password" name="Senha_Esp" minlength="6">
 
 
-            <!-- <article>Contato:</article>
-            <input required placeholder="(11) 99999-9999" type="text" class="lista" name="Contato_Esp" id="Contato_Esp" pattern="(\d{2})\d{5}-\d{4}"  maxlength="11"> -->
 
             <article>Contato</article>
-            <input required placeholder="(11) 99999-9999" type="text" class="lista" id="Contato_Esp" name="Contato_Esp" maxlength="11" />
+            <input required placeholder="(11) 00000-0000" type="text" class="lista" id="Contato_Esp" name="Contato_Esp" minlength="15" maxlength="15" />
 
             <article>Biografia:</article>
-            <input type="text" name="Biografia_Esp" id="bio">
+            <input type="text" name="Biografia_Esp" id="bio" pattern="^[a-zA-Z][a-zA-Z-_\.]{3,20}$">
 
             <input id="botao" name="acao" type="submit" value="Confirmar">
             <input name="form" type="hidden" value="f_form">
