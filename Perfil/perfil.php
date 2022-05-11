@@ -28,10 +28,36 @@
 <body>
     <div class="container">
         <div class="card">
-            <div class="overlay d-none"> <small class="fa fa-close"></small> <img src="https://imgur.com/SSCE2Uj.jpg"> </div>
+            <div 
+                class="overlay d-none"> 
+                <small class="fa fa-close"></small> 
+                <?php 
+                    if($especialista['Genero_Esp'] == "Masculino"){
+                        ?><img src="images/imgMasculino.png"><?php
+                    }else if($especialista['Genero_Esp'] == "Feminino"){
+                        ?><img src="images/imgFeminino.png"><?php
+                    }else{
+                        ?><img src="images/imgOutros.png"><?php
+                    }
+                ?>"> 
+            </div>
             <div class="upperborder"> </div>
             <it class="fa fa-plus"></it>
-            <div class="image"> <span><img id="userimage" src="https://imgur.com/SSCE2Uj.jpg"></span> </div>
+            <div class="image"> 
+                <span>
+                    <img id="userimage" 
+                    src="
+                        <?php 
+                        if($especialista['Genero_Esp'] == "Masculino"){
+                            echo("images/imgMasculino.png");
+                        }else if($especialista['Genero_Esp'] == "Feminino"){
+                            echo("images/imgFeminino.png");
+                        }else{
+                            echo("images/imgOutros.png");
+                        }
+                        ?>">
+                </span> 
+            </div>
             <div class="text">
                 <h3>
                     <?php 
@@ -43,14 +69,9 @@
                     ?>
                 </h3>
                 <p><?php echo $especialista["Biografia_Esp"]?></p>
+                <p><?php echo $especialista["Email_Esp"]?></p>
             </div>
-            <div class="bottom">
-                <div class="social"> 
-                    <i class="fa fa-facebook-f"></i> 
-                    <i class="fa fa-envelope-o"></i></a>
-                    <i class="fa fa-linkedin"></i> 
-                    <i class="fa fa-dribbble"></i> </div>
-            </div>
+            
         </div>
     </div>
     <script src="perfil.js"></script>
