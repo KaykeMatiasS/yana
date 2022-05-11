@@ -48,8 +48,16 @@ body{
     margin-bottom: 38px;
 }
 
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 .conteudo-principal-texto{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 600px;
     color: aliceblue;
     font-weight: 400;
@@ -57,16 +65,16 @@ body{
 }
 
 .conteudo-principal-texto0{
-    padding-top: 40px;
+    padding-top: 10px;
     color: aliceblue;
     font-weight: 100;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 
 }
 
 .conteudo-principal-texto1{
-    padding-top: 70px;
+    padding-top: 100px;
     padding-left: 150px;
     color: aliceblue;
     font-weight: 100;
