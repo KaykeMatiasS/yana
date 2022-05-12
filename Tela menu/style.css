@@ -45,7 +45,7 @@ body{
 
 .conteudo{
     border-top: 0.4px solid aliceblue;
-    margin-bottom: 38px;
+    margin-bottom: 0px;
 }
 
 .principal{
@@ -57,15 +57,15 @@ body{
 }
 
 .conteudo-principal-texto{
-    padding-top: 80px;
-    padding-left: 600px;
+    padding-top: 50px;
+    padding-left: 250px;
     color: aliceblue;
     font-weight: 400;
     font-size: 50px;
 }
 
 .conteudo-principal-texto0{
-    padding-top: 10px;
+    padding-top: 20px;
     color: aliceblue;
     font-weight: 100;
     font-size: 40px;
@@ -74,12 +74,12 @@ body{
 }
 
 .conteudo-principal-texto1{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 150px;
     color: aliceblue;
     font-weight: 100;
     font-size: 30px;
-    padding-bottom: 175px;
+    padding-bottom: 50px;
 }
 .rodape{
     border-top: 0.4px solid aliceblue;

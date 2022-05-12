@@ -1,51 +1,99 @@
-body{background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+}
+
+.cabecalho{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.cabecalho-imagem{
+    height: 80px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+   
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.conteudo{
+    border-top: 0.4px solid aliceblue;
+    margin-bottom: 0px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteudo-principal-texto{
+    padding-top: 50px;
+    padding-left: 250px;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.conteudo-principal-texto0{
+    padding-top: 20px;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 40px;
     text-align: center;
-    font-size: 16px;
-    padding: 18px;
-    width: 150px;
-    cursor: pointer;
-    margin: 1px;
-  }
-  h7{
-    color: white;
-  }
-  img {  
-    float: left; 
-    margin-left: 50px; 
-  } 
-  .button:hover {
-    opacity: 1;
-    right: 0;
-    background-color: white;
-    color: black;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+
+}
+
+.conteudo-principal-texto1{
+    padding-top: 50px;
+    padding-left: 150px;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.rodape{
+    border-top: 0.4px solid aliceblue;
+    padding-top: 30px;
+}
+
+.link-imagem{
+    float:right; 
+    margin-right:0; 
+    margin-left:10px; 
+    margin-bottom: 5px;
+}
+.nomeYANA{
+    text-align: center;
+    color: aliceblue;
+
+}
