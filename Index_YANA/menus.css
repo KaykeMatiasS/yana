@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+}
+
+.cabecalho{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.cabecalho-imagem{
+    height: 80px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+   
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.conteudo{
+    border-top: 0.4px solid aliceblue;
+    margin-bottom: 0px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteudo-principal-texto{
+    padding-top: 50px;
+    padding-left: 250px;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.conteudo-principal-texto0{
+    padding-top: 20px;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.conteudo-principal-texto1{
+    padding-top: 50px;
+    padding-left: 150px;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.rodape{
+    border-top: 0.4px solid aliceblue;
+    padding-top: 30px;
+}
+
+.link-imagem{
+    float:right; 
+    margin-right:0; 
+    margin-left:10px; 
+    margin-bottom: 5px;
+}
+.nomeYANA{
+    text-align: center;
+    color: aliceblue;
+
+}
