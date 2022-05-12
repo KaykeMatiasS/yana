@@ -83,17 +83,16 @@ body{
 }
 .rodape{
     border-top: 0.4px solid aliceblue;
-    padding-top: 30px;
 }
 
-.link-imagem{
-    float:right; 
-    margin-right:0; 
-    margin-left:10px; 
-    margin-bottom: 5px;
+.imagens{
+    display: flex;
+    justify-content: center;
 }
-.nomeYANA{
-    text-align: center;
-    color: aliceblue;
+
+.alinhamento{
+  
+text-align: center;
 
 }
+
