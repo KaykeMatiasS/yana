@@ -10,12 +10,8 @@
 
 body{
     font-size: 100%;
-    background: hsla(217, 100%, 50%, 1);
-    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-    
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
-
 .cabecalho{
     display: flex; 
     flex-direction: row;
@@ -91,8 +87,13 @@ body{
 }
 
 .alinhamento{
-  
-text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
+.cor{
+    color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+}
