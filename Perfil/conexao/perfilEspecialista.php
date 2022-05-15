@@ -14,10 +14,10 @@ class database
 		} 
 	}
 
-	public function dados_especialista($ID_Esp){
+	public function dados_especialista($email_Esp){
 		global $pdo; 
-		$sql = $pdo->prepare("SELECT * FROM `especialista` WHERE ID_Esp = :ID_Esp");
-		$sql->bindValue(":ID_Esp", $ID_Esp);
+		$sql = $pdo->prepare("SELECT * FROM `especialista` WHERE Email_Esp = :Email_Esp");
+		$sql->bindValue(":Email_Esp", $email_Esp);
 		$sql->execute();
 		$lista = $sql->fetch();
 		if($sql->rowCount() > 0){		

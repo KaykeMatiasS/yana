@@ -1,13 +1,15 @@
 <?php
+    session_start();
+
     require_once 'conexao/perfilEspecialista.php';
 
     $u = new database;
     $u->conectar();
 
-    $ID_Esp = "16";
+    $email_Esp = $_SESSION['email'];
 
     if($u->msgErro == ""){ 
-        $especialista = $u->dados_especialista($ID_Esp); 
+        $especialista = $u->dados_especialista($email_Esp); 
     }else{
         echo("Erro ao conectar com o banco");
     }
