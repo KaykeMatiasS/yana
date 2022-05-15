@@ -28,6 +28,8 @@
                 }else if($senha == ''){
                     FormEsp::alert('erro', 'Preencha o campo senha.');
                 }
+            }
+                
     ?>
         
         <header style="margin-right: 40px;">Login</header>
@@ -49,6 +51,9 @@
 
 
             <input id="botao" onclick="" type="submit" value="Confirmar">
+
+
+            <a href="index_escolha.html">Cadastrar-se</a>
             
         
         </form>
