@@ -16,7 +16,7 @@ body{
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 60px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -54,7 +54,7 @@ body{
 
 .conteudo-principal-texto{
     padding-top: 50px;
-    padding-left: 250px;
+    text-align: center;
     color: aliceblue;
     font-weight: 400;
     font-size: 50px;
@@ -71,7 +71,7 @@ body{
 
 .conteudo-principal-texto1{
     padding-top: 50px;
-    padding-left: 150px;
+    text-align: center;
     color: aliceblue;
     font-weight: 100;
     font-size: 30px;
@@ -96,4 +96,20 @@ body{
 .cor{
     color: aliceblue;
     font-family: 'Sarala', sans-serif;
+}
+
+.puta{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media  screen and (max-width: 768px){
+    .puta, .imagem-principal{
+        display: flex;
+        flex-direction: column;
+     
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
