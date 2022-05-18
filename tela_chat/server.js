@@ -11,8 +11,10 @@ app.use(express.static('estilo'))
 const http = require('http').Server(app)
 const serverSocket = require('socket.io')(http)
 
-const porta = 8000
 
+const porta = process.env.PORT || 7000
+
+const host = process.env.HEROKU_APP_NAME ? `https://${process.env.HEROKU_APP_NAME}.herokuapp.com` : "http://localhost"
 
 
 /* Exibir Mensagem de validação do servidor funcionando */ 
