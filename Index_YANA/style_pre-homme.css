@@ -10,17 +10,13 @@
 
 body{
     font-size: 100%;
-    background: hsla(217, 100%, 50%, 1);
-    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-    
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
-
 .cabecalho{
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 60px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -57,8 +53,8 @@ body{
 }
 
 .conteudo-principal-texto{
-    padding-top: 50px;
-    padding-left: 250px;
+    padding-top: 25px;
+    text-align: center;
     color: aliceblue;
     font-weight: 400;
     font-size: 50px;
@@ -75,7 +71,7 @@ body{
 
 .conteudo-principal-texto1{
     padding-top: 50px;
-    padding-left: 150px;
+    text-align: center;
     color: aliceblue;
     font-weight: 100;
     font-size: 30px;
@@ -83,17 +79,37 @@ body{
 }
 .rodape{
     border-top: 0.4px solid aliceblue;
-    padding-top: 30px;
 }
 
-.link-imagem{
-    float:right; 
-    margin-right:0; 
-    margin-left:10px; 
-    margin-bottom: 5px;
+.imagens{
+    display: flex;
+    justify-content: center;
 }
-.nomeYANA{
-    text-align: center;
+
+.alinhamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.cor{
     color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+}
 
+.puta{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media  screen and (max-width: 768px){
+    .puta, .imagem-principal{
+        display: flex;
+        flex-direction: column;
+     
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
