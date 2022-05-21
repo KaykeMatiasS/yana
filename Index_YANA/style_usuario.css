@@ -41,6 +41,10 @@ body{
 .conteudo{
     border-top: 0.4px solid aliceblue;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .conteudo0{
@@ -140,3 +144,21 @@ body{
     opacity: 1;
     right: 0;
   }
+
+
+
+.conteudo_img{
+  padding: 20px;
+  width: 30%;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+ 
+  .conteudo_img{
+    padding: 20px;
+    width: 40%;
+    border-radius: 50px;
+  }
+
+}
