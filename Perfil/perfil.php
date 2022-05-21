@@ -61,7 +61,7 @@
                 </span> 
             </div>
             <div class="text">
-                <h3>
+                <h2>
                     <?php 
                         if($especialista["Nome_Social_Esp"] != ""){
                             echo $especialista['Nome_Social_Esp'];
@@ -69,9 +69,13 @@
                             echo $especialista['Nome_Esp'];
                         }
                     ?>
-                </h3>
-                <p><?php echo $especialista["Biografia_Esp"]?></p>
-                <p><?php echo $especialista["Email_Esp"]?></p>
+                </h2>
+                <br>
+                <h3>BIOGRAFIA</h3>
+                <p style="font-size: 16px;"><?php echo $especialista["Biografia_Esp"]?></p>
+                <br>
+                <h3>CONTATO</h3>
+                <p style="font-size: 16px;"><?php echo $especialista["Email_Esp"]?></p>
             </div>
             
         </div>

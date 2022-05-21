@@ -16,7 +16,8 @@
 
     if($row1 == 1) {
         $_SESSION['email'] = $email;
-        header('Location: painel.php');
+        $_SESSION['nome'] = mysqli_fetch_assoc($result1)['Apelido_Usuario'];
+        header('Location: ../../Index_YANA/index_usuario.php');
         exit();
     }else {
         $query2 = "SELECT * FROM bd_yana.especialista WHERE Email_Esp = '{$email}' and Senha_Esp = '{$senha}'";
@@ -24,7 +25,8 @@
         $row2 = mysqli_num_rows($result2);
         if($row2 == 1) {
             $_SESSION['email'] = $email;
-            header('Location: painel.php');
+            $_SESSION['nome'] = mysqli_fetch_assoc($result2)['Nome_Esp'];
+            header('Location: ../../Index_YANA/index_especialista.php');
             exit();
         }else {	
             $_SESSION['nao_autenticado'] = true;

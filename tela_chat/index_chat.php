@@ -1,3 +1,6 @@
+<?php
+	require_once('../Tela_cadastro_YANA/login/verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,15 +56,16 @@
 		<script>
 			$(function () {
 				const socket = io()
-				socket.nickname = ''
+				socket.nickname = $_SESSION['nome'];
 
 				
 					
 				/* Envio das msgs do front-end para servidor  */
 				$('form').submit(function(evt){
-					if(socket.nickname === ''){
-						socket.nickname = prompt('Digite o seu usuario').toUpperCase()
-						socket.emit('login', socket.nickname)
+					if(socket.nickname === $_SESSION['nome']){
+
+						// socket.nickname = prompt('Digite o seu usuario').toUpperCase()
+						// socket.emit('login', socket.nickname)
 
 
 						$('#msg').keypress(function (evt) {

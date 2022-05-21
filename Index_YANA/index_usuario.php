@@ -1,3 +1,6 @@
+<?php
+    include('../Tela_cadastro_YANA/login/verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +24,7 @@
 <main class="conteudo">
 
     <div>
+    <h2 style="color: white; text-align: center;">Olá, <?php echo $_SESSION['nome'];?></h2>
         <h1 class="conteudo0">Seja Bem-Vindo ao Y.A.N.A.</h1>
         <p class="conteudo1">Chat disponivel!</p>
             <p class="conteudo1-1">Seja muito bem-vindo ao y.a.n.a.<br>Agora que você já se cadastrou em nossa plataforma que tal começar

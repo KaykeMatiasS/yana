@@ -40,6 +40,7 @@
                 }else{
                     FormUsu::cadastrar($apelido, $cpf, $pronomes, $email, $senha);
                     FormUsu::alert('sucesso','Cadastro realizado com sucesso.');
+                    header('Location: ../Index_YANA/index_usuario.php');
                 }
             }
 

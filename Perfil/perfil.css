@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A9ACAC
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .container::before {
@@ -21,13 +21,13 @@
     bottom: 0;
     height: 50%;
     width: 100%;
-    background-color: #E0E8E9;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
 }
 
 .card {
-    height: 350px;
-    width: 320px;
+    height: 450px;
+    width: 420px;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
@@ -66,7 +66,7 @@
 .upperborder {
     height: 120px;
     width: 100%;
-    background-image: linear-gradient(to right, #D85B6D, #F48B6B);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .fa-plus {
@@ -101,7 +101,7 @@
     border: 5px solid #fff;
     position: absolute;
     top: -50px;
-    left: 115px
+    left: 160px
 }
 
 .image span img {
