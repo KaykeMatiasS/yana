@@ -1,6 +1,6 @@
 <?php
-    include('../login/verifica_login.php');
-?>
+    include('../cadastro/login/verifica_login.php');
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
