@@ -1,6 +1,6 @@
 <?php
-    include('../Tela_cadastro_YANA/login/verifica_login.php');
-?>
+    include('../login/verifica_login.php');
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y.A.N.A.</title>
     <link rel="stylesheet" type="text/css" href="style_especialista.css">
-    <link rel="shortcut icon" href="../Index_YANA/imagens/Logo.png">
+    <link rel="shortcut icon" href="imagens/Logo.png">
 </head>
 <body>
 <header class="cabecalho">
@@ -25,7 +25,7 @@
 <main class="conteudo">
 
     <div>
-    <h2 style="color: white; text-align: center;">Olá, <?php echo $_SESSION['nome'];?></h2>
+    <h2 style="color: white; text-align: center; font-family: 'Sarala', sans-serif;">Olá, <?php echo $_SESSION['nome'];?></h2>
     <h1>Bem Vindo ao YANA</h1>
 
     <p style="text-align:center">Agora você tem acesso a o chat e ao seu perfil.</p>

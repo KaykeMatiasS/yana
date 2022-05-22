@@ -1,5 +1,5 @@
 <?php
-    include('../Tela_cadastro_YANA/login/verifica_login.php');
+    include('../login/verifica_login.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y.A.N.A.</title>
-    <link rel="shortcut icon" href="../Index_YANA/imagens/Logo.png">
+    <link rel="shortcut icon" href="imagens/Logo.png">
     <link rel="stylesheet" type="text/css" href="style_usuario.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 <main class="conteudo">
 
     <div>
-    <h2 style="color: white; text-align: center;">Olá, <?php echo $_SESSION['nome'];?></h2>
+    <h2 style="color: white; text-align: center; font-family: 'Sarala', sans-serif;">Olá, <?php echo $_SESSION['nome'];?></h2>
         <h1 class="conteudo0">Seja Bem-Vindo ao Y.A.N.A.</h1>
         <p class="conteudo1">Chat disponivel!</p>
             <p class="conteudo1-1">Seja muito bem-vindo ao y.a.n.a.<br>Agora que você já se cadastrou em nossa plataforma que tal começar
