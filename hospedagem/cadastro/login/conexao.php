@@ -1,8 +1,8 @@
 <?php
     define('HOST', 'us-cdbr-east-05.cleardb.net');
-    define('USER', 'b49c19c614f020');
-    define('PASSWORD', '85a2c26e');
-    define('DATABASE', 'heroku_ebd1ca9ecd5833f');
+    define('USER', 'b29fb938e18320');
+    define('PASSWORD', '80c894a9');
+    define('DATABASE', 'heroku_d82daf3248dddee');
 
     $conexao = mysqli_connect(HOST, USER, PASSWORD, DATABASE) or die ('Erro ao conectar ao banco de dados');
 ?>
