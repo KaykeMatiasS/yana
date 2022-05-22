@@ -8,8 +8,7 @@ class database
 	{
 		global $pdo;
 		try{
-			$pdo = new PDO("mysql:dbname="."heroku_d82daf3248dddee".";host="."us-cdbr-east-05.cleardb.net", "b29fb938e18320", "80c894a9
-			");
+			$pdo = new PDO("mysql:dbname="."heroku_ebd1ca9ecd5833f".";host="."us-cdbr-east-05.cleardb.net", "b49c19c614f020", "85a2c26e");
 		} catch (PDOException $e){
 		 	$msgErro = $e->getMessage();
 		} 
