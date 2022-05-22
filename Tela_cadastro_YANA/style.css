@@ -1,0 +1,61 @@
+body{background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);display: flex; justify-content: center;align-items: center;height: 100vh;
+margin: 260px;}
+
+
+
+
+/* =====  formulário ======= */
+
+header{color: rgb(0, 0, 0);text-align: center;font-weight: 900;font-size: 17pt;}
+
+article{font-weight: 900;}
+
+#bloco {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 1070px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#botao{
+    background-color: transparent;
+    border: 2px solid #221f1e;
+    border-radius: 0.6em;
+    color: #25100e;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    margin-left: 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;}
+
+#botao:hover{
+    box-shadow: 0 0 40px 40px #298cce inset;
+}
+
+.lista{width: 90%;padding: 5px;margin: 5px;}
+
+.lista:focus{ border-radius: 4px;}
+
+article{padding-top: 10px;}
+
+button{margin-top: 50px;margin-left: 200px;}
+
+
+#bio{width:350px; height: 200px;}
+
+
+/* ======== */
+
+
+
