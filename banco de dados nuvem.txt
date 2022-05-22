@@ -1,0 +1,13 @@
+
+
+
+
+
+user: b29fb938e18320
+
+senha:80c894a9
+
+host: us-cdbr-east-05.cleardb.net
+
+banco: heroku_d82daf3248dddee
+
