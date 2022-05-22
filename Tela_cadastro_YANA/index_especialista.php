@@ -55,7 +55,6 @@
                 else{
                     FormEsp::cadastrar($nome, $nome_social, $cpf, $genero, $idade, $instituicao, $formacao, $email, $senha, $contato, $biografia);
                     FormEsp::alert('sucesso','Cadastro realizado com sucesso.');
-                    header('Location: ../Index_YANA/index_especialista.php');
                 }
             }
 
