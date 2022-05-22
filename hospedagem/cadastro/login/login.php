@@ -17,7 +17,7 @@
     if($row1 == 1) {
         $_SESSION['email'] = $email;
         $_SESSION['nome'] = mysqli_fetch_assoc($result1)['Apelido_Usuario'];
-        header('Location: ../../Index_YANA/index_usuario.php');
+        header('Location: ../../index_usuario.php');
         exit();
     }else {
         $query2 = "SELECT * FROM heroku_d82daf3248dddee.especialista WHERE Email_Esp = '{$email}' and Senha_Esp = '{$senha}'";
@@ -26,7 +26,7 @@
         if($row2 == 1) {
             $_SESSION['email'] = $email;
             $_SESSION['nome'] = mysqli_fetch_assoc($result2)['Nome_Esp'];
-            header('Location: ../../Index_YANA/index_especialista.php');
+            header('Location: ../../index_especialista.php');
             exit();
         }else {	
             $_SESSION['nao_autenticado'] = true;
