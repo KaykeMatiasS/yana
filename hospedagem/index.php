@@ -16,7 +16,7 @@
         <img  class="cabecalho-imagem" src="imagens/Logo.png" alt="Logo da Y.A.N.A.">
     </a> 
     <div class="button-group" align="center">											
-        <a href="index.html" target="Principal"> <button class="button"><span>Home</button></a> 
+        <a href="index.php" target="Principal"> <button class="button"><span>Home</button></a> 
         <a href="cadastro/index_escolha.html" target="Principal"> <button class="button "><span>Cadastro</button></a>
         <a href="cadastro/login/index_login.php" target="Principal"><button class="button"><span>Login</button></a> 
     </div>

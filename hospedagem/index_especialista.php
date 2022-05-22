@@ -17,9 +17,9 @@
         <img  class="cabecalho-imagem" src="imagens/logo.png" alt="Logo da Y.A.N.A."> 
         </a> 
         <div class="button-group" align="center">											
-            <a href="../Tela_cadastro_YANA/index_escolha_chat.html" target="Principal"> <button class="button"><span>Chats</button></a> 
-            <a href="../Perfil/perfil.php" target="Principal"> <button class="button "><span>Perfil</button></a>
-            <a href="../Tela_cadastro_YANA/login/logout.php"> <button class="button"><span>Sair</button></a> 
+            <a href="cadastro/index_escolha_chat.html" target="Principal"> <button class="button"><span>Chats</button></a> 
+            <a href="Perfil/perfil.php" target="Principal"> <button class="button "><span>Perfil</button></a>
+            <a href="cadastro/login/logout.php"> <button class="button"><span>Sair</button></a> 
         </div>
 </header>    
 <main class="conteudo">
