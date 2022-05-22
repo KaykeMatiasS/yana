@@ -13,12 +13,14 @@
 </head>
 <body>
 <header class="cabecalho">
-        <a href="../Index_YANA/pre-home.html"> 
-        <img  class="cabecalho-imagem" src="imagens/logo.png" alt="Logo da Y.A.N.A."> 
+        <a href="index_usuario.php"> 
+        <img  class="cabecalho-imagem" src="imagens/Logo.png" alt="Logo da Y.A.N.A."> 
         </a> 
         <div class="button-group" align="right">
-            <a href="cadastro/index_escolha_chat.html" target="Principal"> <button class="button "><span>Chats</button></a>
-            <a href="cadastro/login/logout.php"><span>Sair</button></a> 
+            <a href="cadastro/index_escolha_chat.html" target="Principal"> <button class="button"><span>Chats</button></a>
+
+            <a href="cadastro/login/logout.php"> <button class="button"><span>Sair</button></a> 
+            
         </div>
 </header>    
 <main class="conteudo">

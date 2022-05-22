@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Estamos aqui para ajuda-lo da melhor forma que conseguirmos, junto de profissionais aos quais te darão todo o apoio para seguir em frente">
     <title>Y.A.N.A.</title>
-    <link rel="shortcut icon" href="../Index_YANA/imagens/Logo.png">
+    <link rel="shortcut icon" href="imagens/logo10.png">
     <link rel="stylesheet" type="text/css" href="style_pre-homme.css">
 
 </head>

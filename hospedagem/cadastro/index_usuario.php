@@ -40,6 +40,8 @@
                 }else{
                     FormUsu::cadastrar($apelido, $cpf, $pronomes, $email, $senha);
                     FormUsu::alert('sucesso','Cadastro realizado com sucesso.');
+
+                    header('Location: ../index_usuario.php');
                 }
             }
 
