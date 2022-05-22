@@ -27,7 +27,7 @@
 
     <div>
     <h2 style="color: white; text-align: center; font-family: 'Sarala', sans-serif;">Olá, <?php echo $_SESSION['nome'];?></h2>
-        <h1 class="conteudo0">Seja Bem-Vindo ao Y.A.N.A.</h1>
+        <h1 class="conteudo0">Seja Bem-Vindo(a) ao Y.A.N.A.</h1>
         <p class="conteudo1">Chat disponivel!</p>
             <p class="conteudo1-1">Seja muito bem-vindo ao y.a.n.a.<br>Agora que você já se cadastrou em nossa plataforma que tal começar
                a desfrutar dela? <br>entre na ala de chats para poder conversar com um de nossos especialistas.

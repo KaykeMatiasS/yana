@@ -40,8 +40,6 @@
                 }else{
                     FormUsu::cadastrar($apelido, $cpf, $pronomes, $email, $senha);
                     FormUsu::alert('sucesso','Cadastro realizado com sucesso.');
-
-                    header('Location: ../index_usuario.php');
                 }
             }
 
@@ -77,7 +75,8 @@
 
             <input id="botao" name="acao" onclick="" type="submit" value="Confirmar">
             <input name="form" type="hidden" value="f_form">
-
+            <br>
+            <a href="login/index_login.php"><h3>Clique aqui após realizar seu cadastro.</h3></a>
         </form>
     </div>
     <script>

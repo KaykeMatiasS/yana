@@ -120,7 +120,8 @@
 
             <input id="botao" name="acao" type="submit" value="Confirmar">
             <input name="form" type="hidden" value="f_form">
-
+            <br>
+            <a href="login/index_login.php"><h3>Clique aqui após realizar seu cadastro.</h3></a>
         </form>
     </div>
     <script src="java.js"></script>
