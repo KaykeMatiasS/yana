@@ -5,4 +5,4 @@ O objetivo do Y.A.N.A é democratizar o acesso ao atendimento psicológico, util
 
 O site foi utiliza das linguagens HTML, CSS, JavaScript e PHP.
 
-## <a href="https://cadastroyana.herokuapp.com/" target="_blank">Você pode conferir o meu projeto clicando aqui!</a>
+## <a href="http://54.205.42.174/yana/hospedagem/" target="_blank">Você pode conferir o meu projeto clicando aqui!</a>
